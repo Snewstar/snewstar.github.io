@@ -1,0 +1,311 @@
+/*задаем цвет фона для всех страниц сайта*/
+
+body {
+    background-image: url(img/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+    
+.logo {
+    float: left;
+    margin: 4px 0 3px 80px;
+}
+
+
+.wrapper {
+    height: 100%;
+    max-width: 960px;
+    margin:0 auto;
+    position: relative;
+    
+}
+
+
+/*HEADER>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.header {    
+    border: 3px;
+    border-color: black;
+    border-style: double;
+    border-radius: 15px 15px 0 0;
+    height: 110px;
+    width: 958px;
+    display: inline-block;
+    background-image:url(img/fon%20for%20h.png);
+    background-repeat: no-repeat;
+    background-size: 958px
+}
+/* обрашаемся к сылкам внутри меню убираем подчеркивание, выставляем цвет текста меню, отступы, наведение*/
+
+.menu li {
+    list-style-type: none;
+    font-size: 35px;
+    margin: 35px 0px 0px 40px;
+    float: right;   
+}
+.menu a {
+    text-decoration: none;
+    color:#6a1db9;
+}
+.menu li:nth-child(1) {
+    padding-right: 70px;
+}
+.menu a:hover{
+    color: brown;    
+}
+.menu a:active{
+    color: forestgreen;
+}
+
+
+.content {
+    background: #f8f8f8;
+    border: 1px solid black;
+    height:890px;
+    width: 901px;
+    padding: 30px;
+    margin:  2px 0 6px 0;
+}
+.clik {
+    position:fixed;
+    right: 0px;
+    top:165px;
+    display:inline-block;
+    border-radius: 5px;
+    width: 180px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #4d63c6;
+    padding: 15px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.textmain {
+    display: inline-block;
+    text-align:justify;
+    text-indent: 30px;
+    float: right;
+    width: 390px;
+}
+/*заголовки, параграфы на странице banan,sgushenka.html>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+    width: 220px;
+    text-align: center;
+    clear: both;
+}
+.banan {
+    width: 241px;
+    text-align: left;
+    float: left;
+    display: inline-block;
+}
+.sgushenka {
+    width: 270px;
+    text-align: center;
+    display:inline-block;
+}
+.bay {
+    width: 60px;
+    height: 30px;
+    background:#cbc2f1;
+    outline: 2px solid black;
+    font-size: 20px;
+    position: absolute;
+    top: 380px
+    
+}
+.bay:active{
+    background: black;
+    outline: 4px solid #cbc2f1;
+    color: white;
+}
+/*краткое описание товара*/
+
+.miniword {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    display: block;
+    width: 600px;
+    text-align: justify;
+    overflow: hidden;
+    margin: 25px 0;
+}
+.miniword::first-letter{
+    font-size: 20px;
+    color: brown;
+    font-family: fantasy;
+}
+
+/*подробное описание товара*/
+
+.maxword {
+    color: #484343;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align:justify;
+    width: 100%;
+}
+
+.maxword::first-letter{
+    font-size: 30px;
+    color: brown;
+     font-family: fantasy;
+}
+
+/*характеристики*/
+
+.parameter {
+    color:brown;
+    font-size: 20px;
+    font-style: oblique;
+}
+/*убираем стандартные маркеры на страницах каталога банан, сгущенка на маркеры трубочки*/
+.parameter li {
+    list-style-image: url(img/ice_cream_PNG5113.png);
+}
+/*создаем рамкку вокруг картинки на страницах банан, сгущенка*/
+.picframe {
+    outline: 2px solid #000;
+    outline-offset: -20px;
+    width: 200px;
+    float: left;
+    margin-bottom: 20px;
+}
+.picframe:hover {
+    outline-style: none;
+}
+
+
+
+
+
+
+/*страница КОНТАКТЫ работа с формами>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+form {
+    line-height: 2;
+    padding-left: 5px;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 20%;
+    height: 20px;
+    padding-left: 5px;
+    float: left;
+    text-align:left;
+    font-size: 90%;
+    font-style: italic;
+    background-color: honeydew;
+    color:darkslategray;
+}
+input{
+    text-transform: capitalize;
+}
+input[type="email"]:focus {
+    background-color: #3e3961;
+    color: white;
+    opacity: 0.8;
+}
+input[type="text"]:focus{
+    text-transform: capitalize;
+}
+/*меняем цвет текста по умолчанию расположенного (ваше имя, телефон, электронная почта, пароль) в форме*/
+::-webkit-input-placeholder { /* WebKit browsers */
+   color: brown;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: brown;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: brown;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: brown;
+}
+.conect {
+    text-align: justify;
+    width: 300px;
+    float: right;
+    margin: 40px 40px 0 0;
+}
+
+
+
+
+/*ТАБЛИЦЫ на странице banan, sgushenka >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.characteristic {
+    border: 1px solid #000;
+    width: 500px;
+    height: 200px;
+    border-collapse: collapse;
+    float: right;
+}
+.characteristic td{
+    border: 1px solid #000;
+    text-align: center;
+}
+.prod:hover {
+    background-image: url(img/ice_cream.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 45px;
+}
+.prod {
+    height: 90px;
+}
+.characteristic:hover {
+    background:grey;
+    color: aliceblue;
+}
+
+
+
+
+/*Характеристики для главной таблице 4*5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.tabmain{
+    border: 1px solid #000;
+    width: 500px;
+    height: 200px;
+    border-collapse: collapse;
+    position: absolute;
+    right: 0;
+    top: 720px;
+    left:430px;
+}
+.tabmain td{
+    border: 1px solid #000;
+    text-align: center;
+}
+.tabmain:hover {
+    background:grey;
+    color: aliceblue;
+}
+
+
+/*FOOTER>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.footer {   
+    background:#f8f8f8;
+    border-color: black;
+    border-style: double;
+    border-radius: 0 0 15px 15px;
+    height: 100px;
+    width: 954px;
+    background-image: url(img/fon%20for%20f.png);
+    
+}
+.footer p {
+    float: right;
+    margin: 70px 20px 0px 0;
+}
+.footer a{
+    float: left;
+    margin: 70px 0 0px 20px;
+}
